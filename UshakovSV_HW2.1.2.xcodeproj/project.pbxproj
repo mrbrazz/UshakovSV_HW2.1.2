@@ -61,8 +61,8 @@
 				D63EA1DE2693B7A8001718D5 /* ViewController.swift */,
 				D63EA1E02693B7A8001718D5 /* Main.storyboard */,
 				D63EA1E32693B7AB001718D5 /* Assets.xcassets */,
-				D63EA1E52693B7AB001718D5 /* LaunchScreen.storyboard */,
 				D63EA1E82693B7AB001718D5 /* Info.plist */,
+				D63EA1E52693B7AB001718D5 /* LaunchScreen.storyboard */,
 			);
 			path = UshakovSV_HW2.1.2;
 			sourceTree = "<group>";
