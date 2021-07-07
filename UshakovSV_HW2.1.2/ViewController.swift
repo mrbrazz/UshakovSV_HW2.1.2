@@ -10,10 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     
     // MARK: - IB Outlets
-    @IBOutlet weak var startButton: UIButton!
+ 
     @IBOutlet weak var redLight: UIView!
     @IBOutlet weak var yellowLight: UIView!
     @IBOutlet weak var greenLight: UIView!
+    @IBOutlet weak var startButton: UIButton!
     
     // MARK: - Private Properties
     private let lightOn: CGFloat = 1.0
@@ -32,8 +33,12 @@ class ViewController: UIViewController {
         yellowLight.alpha = lightOff
         greenLight.alpha = lightOff
     }
-    @IBAction func startButtonPressed() { startButton.setTitle("Next", for: .normal)
-        
+    
+    
+    @IBAction func startButtonPressed() {
+    
+        startButton.setTitle("Next", for: .normal)
+
         switch lightOn {
         case redLight.alpha:
             redLight.alpha = lightOff
@@ -47,5 +52,9 @@ class ViewController: UIViewController {
         default:
             redLight.alpha = lightOn
         }
+
+
 }
+    
 }
+
