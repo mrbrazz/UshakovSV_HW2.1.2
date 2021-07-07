@@ -33,6 +33,19 @@ class ViewController: UIViewController {
         greenLight.alpha = lightOff
     }
     @IBAction func startButtonPressed() { startButton.setTitle("Next", for: .normal)
-        redLight.alpha = 1.0
+        
+        switch lightOn {
+        case redLight.alpha:
+            redLight.alpha = lightOff
+            yellowLight.alpha = lightOn
+        case yellowLight.alpha:
+            yellowLight.alpha = lightOff
+            greenLight.alpha = lightOn
+        case greenLight.alpha:
+            greenLight.alpha = lightOff
+            redLight.alpha = lightOn
+        default:
+            redLight.alpha = lightOn
+        }
 }
 }
